@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div id="wrapper">
+    <section id="main">
+      <div>
+        <div class="tester">
+          <span class="testtop">
+            <img src="./images/image-jeremy.png" alt="">
+            <span class="smalltext">Report for</span>
+            <span class="personname">Jeremy Robson</span>    
+          </span>
+        </div>
+        <div id="botleft">        
+          <span id="seldaily" class="active">Daily</span>
+          <span id="selweekly">Weekly</span>
+          <span id="selmonthly">Monthly</span>    
+        </div>
+      </div>
+    </section>
+
+    <section id="work">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+                Work
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailyWork" class="StyleTheBox">
+              <span class="daily largetext">5hrs</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 7hrs</span> <!-- daily -->
+            </span>
+            <span id="WeeklyWork" class="HideTheBox">
+              <span class="weekly largetext">32hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 36hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlyWork" class="HideTheBox">
+              <span class="monthly largetext">103hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 128hrs</span> <!-- monthly -->
+            </span>
+    </div>
+    </section>
+    
+    <section id="exercise">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+              Exercise
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailyExercise" class="StyleTheBox">
+              <span class="daily largetext">1hr</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 1hr</span> <!-- daily -->
+            </span>
+            <span id="WeeklyExercise" class="HideTheBox">
+              <span class="weekly largetext">4hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 5hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlyExercise" class="HideTheBox">
+              <span class="monthly largetext">11hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 18hrs</span> <!-- monthly -->
+            </span>
+        </span>
+      </div>
+    </section>
+
+    <section id="play">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+              Play
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailyPlay" class="StyleTheBox">
+              <span class="daily largetext">1hr</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 2hrs</span> <!-- daily -->
+            </span>
+            <span id="WeeklyPlay" class="HideTheBox">
+              <span class="weekly largetext">10hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 8hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlyPlay" class="HideTheBox">
+              <span class="monthly largetext">23hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 29hrs</span> <!-- monthly -->
+            </span>
+        </span>
+      </div>
+    </section>
+
+    <section id="social">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+              Social
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailySocial" class="StyleTheBox">
+              <span class="daily largetext">1hr</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 3hrs</span> <!-- daily -->
+            </span>
+            <span id="WeeklySocial" class="HideTheBox">
+              <span class="weekly largetext">5hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 10hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlySocial" class="HideTheBox">
+              <span class="monthly largetext">21hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 23hrs</span> <!-- monthly -->
+            </span>
+        </span>
+      </div>
+    </section>
+
+    <section id="study">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+              Study
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailyStudy" class="StyleTheBox">
+              <span class="daily largetext">0hrs</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 1hr</span> <!-- daily -->
+            </span>
+            <span id="WeeklyStudy" class="HideTheBox">
+              <span class="weekly largetext">4hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 7hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlyStudy" class="HideTheBox">
+              <span class="monthly largetext">13hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 19hrs</span> <!-- monthly -->
+            </span>
+        </span>
+      </div>
+    </section>
+
+    <section id="selfcare">      
+      <div class="box">
+        <span class="text">
+            <span class="boxtop">
+              Self Care
+                <img src="./images/icon-ellipsis.svg" alt="" class="ellipsis">
+            </span>
+            <span id="DailySelfcare" class="StyleTheBox">
+              <span class="daily largetext">0hrs</span> <!-- daily -->
+              <span class="daily smalltext">Yesterday - 1hr</span> <!-- daily -->
+            </span>
+            <span id="WeeklySelfcare" class="HideTheBox">
+              <span class="weekly largetext">2hrs</span> <!-- weekly -->
+              <span class="weekly smalltext">Last Week - 2hrs</span> <!-- weekly -->
+            </span>
+            <span id="MonthlySelfcare" class="HideTheBox">
+              <span class="monthly largetext">7hrs</span> <!-- monthly -->
+              <span class="monthly smalltext">Last Month - 11hrs</span> <!-- monthly -->
+            </span>
+        </span>
+      </div>
+    </section>
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
